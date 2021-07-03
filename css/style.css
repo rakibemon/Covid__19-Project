@@ -190,7 +190,7 @@ header div ul li a:hover{
 
 /* Doctor section */
 .doctor-container{
-    background-image: url("../img/home-bg.jpg");
+    background-image: url("../img/background-img.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
