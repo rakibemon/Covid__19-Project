@@ -283,7 +283,7 @@ header .sticky .logo{
     color: white !important;
 }
 header .sticky .logo span{
-    color: black;
+    color: #fff;
 }
  header .sticky ul li a{
     color: white !important;
