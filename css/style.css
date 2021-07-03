@@ -24,11 +24,12 @@ img {
   }
   /* Navbar section */
 header{
-    background-image: url("/img/home-bg.jpg");
+    background-image: url("img/home-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    transition-property: all;
     transition-duration: 0.6s;
 }
 .nav-design{
