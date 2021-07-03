@@ -294,7 +294,7 @@ header .sticky .logo span{
 /* Media Queries */
 
 /* for Mobile Phone */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 768px){
     header nav{
         background: white;
     }
@@ -399,6 +399,12 @@ padding-bottom: 25px;
     width: 75%;
 }
 
+footer .about{
+    padding-left: 2.6rem;
+    padding-right: 7rem;
+}
+}
+
 /* To-top section */
 .to-top{
     position: fixed;
@@ -430,7 +436,7 @@ padding-bottom: 25px;
     }
 }
 
-}
+
 /* for desktop */
 @media screen and (min-width: 1024px){
     .precautions-container div .col-md-6{
@@ -457,11 +463,22 @@ padding-bottom: 25px;
     section div img{
         padding-top: 3rem;
     }
+    .precautions-container div h2{
+        padding: 0px 1rem;
+        font-size: 1.8rem;
+    }
+    .precautions-container .col-12{
+        width: 46%;
+        margin: 1rem 1.1rem;
+    }
     .precautions-container div h3{
       margin-top: -20px;
     }
     .precautions-container div p{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .symptoms-container div img{
+        object-fit: contain;
     }
     .doctor-container .col-md-4{
         width: 28%;
@@ -496,6 +513,9 @@ padding-bottom: 25px;
         margin-top: 0.5rem ;
         transition: all 150ms linear;
         text-decoration: none;
+    }
+    .handwash-container div img{
+        object-fit: contain;
     }
     
     
