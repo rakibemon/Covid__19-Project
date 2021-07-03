@@ -1,0 +1,8 @@
+$colours :(
+    dark-blue:#0A3D62,
+    blue: #4C7CA2,
+    );
+@each $name, $color in $colours
+    {
+        .color-#{$name} {color: $color};
+    }

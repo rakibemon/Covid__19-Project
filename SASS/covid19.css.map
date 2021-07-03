@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMQ,AAAA,gBAAgB,CAAA;EAAC,KAAK,EALhB,OAAO;CAKmB;;AAAhC,AAAA,WAAW,CAAK;EAAC,KAAK,EAJpB,OAAO;CAIuB",
+    "sources": [
+        "covid19.scss"
+    ],
+    "names": [],
+    "file": "covid19.css"
+}

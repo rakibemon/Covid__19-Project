@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+:root{
+    --dark-blue: #0A3D62;
+    --blue: #4C7CA2;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 80%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Navbar section */
+header{
+    background-image: url(/img/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition-duration: 0.6s;
+}
+.nav-design{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition-duration: 0.6s;
+}
+header .logo{
+    color: var(--dark-blue) !important;
+}
+header div ul li a{
+    padding: 5px 20px !important;
+    color: var(--dark-blue) !important;
+}
+header div ul li a:hover{
+    background-color: var(--dark-blue);
+    color: #fff !important;
+    border-radius: 0.25rem;
+}
+.active{
+    background-color: var(--dark-blue);
+    color: #fff !important;
+    border-radius: 0.25rem;   
+}
+
+/* Home section */
+.home-container{
+    padding-top: 50px;
+}
+.home-item h1{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.home-item h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.button{
+    display: flex;
+    margin: auto;
+    background: var(--blue);
+    color: white;
+    padding: 7px 40px;
+    border-radius: 0.25rem;
+}
+.button:hover{
+    background: var(--dark-blue);
+    color: white !important;
+}
+
+/* Prevent section */
+.prevent-container div img{
+    height: 90px;
+    width: 100px;
+    display: flex;
+    margin: auto;
+}
+.js-hover:hover{
+    /* box-shadow: 5px 5px 20px 10px #888888; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* To-top button */
+/* .to-top{
+    background-color: #0A3D62;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    animation: float 3s linear infinite;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+*/
+.to-top{
+    position: fixed;
+    right: 30px;
+    bottom: 32px;
+    height: 70px;
+    width: 70px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+.to__top__active{
+    opacity: 1;
+    pointer-events:auto;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+/* symptoms section */
+.symptoms-container{
+    background: url(/img/background-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.symptoms-container div .col-md-3 img{
+        height: 700px;
+        width: 700px;
+}
+.symptoms-container div .col-md-4 img{
+    height: 170px;
+    width: 180px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin: auto; */
+}
+
+/* precautions section */
+.precautions-container h2{
+    background-color: var(--dark-blue);
+    padding: 10px 0px;
+    margin-bottom: 25px;
+}
+.precautions-container div p{
+    font-size: 12px;
+}
+
+/* Doctor section */
+.doctor-container{
+    background: url(/img/background-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;   
+}
+.doc-logo a{
+    background-color: #eee;
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0px 10px;
+    transition: all 150ms linear;
+    text-decoration: none;
+}
+.doc-logo a:hover{
+    background-color: var(--dark-blue);
+    color: #fff;
+    transform: rotate(360deg);
+}
+.doctor-container img{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin: 10px auto;
+    background-color: var(--blue);
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Hand Wash section */
+.handwash-container div .w__sub__img img{
+height: 12rem;
+width: 12rem;
+}
+/* Footer */
+footer{
+    max-width: 100vw;
+    background: url(/img/background-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.2rem;
+
+}
+
+footer div h3{
+    padding-left: 2rem !important;
+    color: var(--dark-blue);
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--blue);
+    
+}
+footer ul li a:hover{
+    color: var(--dark-blue);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Scroll Navbar */
+ header .sticky{
+     /* padding: 10px 10px; */
+    background-color: var(--blue);
+}
+header .sticky .logo{
+    color: white !important;
+}
+header .sticky .logo span{
+    color: black;
+}
+ header .sticky ul li a{
+    color: white !important;
+}
+
+
+
+/* Media Queries */
+
+/* for Mobile Phone */
+
+@media screen and (max-width: 450px){
+    header nav{
+        background: white;
+    }
+    .nav-design{
+       border-top: 0.1rem solid #fff;
+       padding-right: 30px;
+    }
+header div ul{
+    padding-top: 20px;
+}
+header div ul li a{
+    margin: 10px 0px;
+}
+/* Home section */
+
+.home-container{
+    padding-top: 30px;
+}
+.home-item h1{
+    /* margin-top: 60px;
+    margin-bottom: 20px; */
+    font-size: 30px;
+}
+.home-item h2{
+    font-size: 20px;
+}
+/* Prevent section */
+.prevent-container div .col-lg-3{
+    margin-top: 20px;
+}
+.prevent-container div .col-md-6{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+/* Symptoms section */
+.symptoms-container div .col-sm-3 img{
+height: 250px;
+width: 150px;
+display: flex;
+margin: auto;
+padding-bottom: 25px;
+}
+.symptoms-container div .col-6 img{
+    height: 100px;
+    width: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.no__3{
+    margin-top: 28px;
+}
+/* precations */
+.precautions-container{
+    /* margin-top: 30px; */
+    margin: 30px 20px;
+}
+.precautions-container div .preca-1st-col .col-md-9{
+    text-align: center;
+}
+.precautions-container div .preca-1st-col .col-md-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.precautions-container div div .col-12{
+    width: 100%;
+}
+.precautions-container div .col-md-6:first-child{
+    justify-content: center;
+}
+
+.doc-logo a{
+    background-color:#eee;
+    position: relative;
+    bottom: 16px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem ;
+    transition: all 150ms linear;
+    text-decoration: none;
+}
+.doctor-container div .col-12{
+    width: 90%;
+    margin: 0.5rem auto;
+    font-size: small;
+}
+/* HandWash Section */
+.handwash-container div .w__main__img{
+    order: -1;
+    
+}
+.handwash-container div .w__main__img img{
+    padding-right: 1rem;
+    height: 50%;
+    width: 75%;
+}
+
+/* To-top section */
+.to-top{
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+.to__top__active{
+    opacity: 1;
+    pointer-events:auto;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+}
+/* for desktop */
+@media screen and (min-width: 1024px){
+    .precautions-container div .col-md-6{
+        width: 45%;
+    }
+    .precautions-container div .col-md-6:first-child{
+        margin-right: 25px;
+    }
+    .precautions-container div .col-md-6:last-child{
+        position: relative;
+        right: 0%;
+    }
+    .doctor-container .col-md-6{
+        width: 30%;
+        margin: 5px 1.2rem;
+    }
+    
+}
+/* for Tab */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    section div img{
+        padding-top: 3rem;
+    }
+    .precautions-container div h3{
+      margin-top: -20px;
+    }
+    .precautions-container div p{
+        font-size: 1.1rem;
+    }
+    .doctor-container .col-md-4{
+        width: 28%;
+        margin: 5px 1.2rem;
+    }
+    .doc-logo a{
+        /* position: relative; */
+        margin: 0.5rem auto;
+        justify-content: space-between;
+    
+    }
+    .doctor-container div .col-lg-4{
+        width: 45%;
+        margin: 0px 1.1rem;
+    }
+    .doctor-container div .col-lg-4:last-child{
+        /* margin-top: 0.5rem; */
+        margin: 0.75rem auto;
+    }
+    .doc-logo a{
+        background-color:#eee;
+        position: relative;
+        bottom: 5px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-top: 0.5rem ;
+        transition: all 150ms linear;
+        text-decoration: none;
+    }
+    
+    
+}
